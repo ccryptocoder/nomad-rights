@@ -23,6 +23,53 @@
     }
 }
 
+.section-title {
+    font-family: var(--ff-200);
+    font-weight: 900;
+    font-size: clamp(35px, 4vw, 60px);
+    line-height: 1em;
+    color: var(--clr-100);
+    text-transform: uppercase;
+}
+
+.img-decorated {
+    position: relative;
+    &::before {
+        content: '';
+        display: block;
+        width: calc(var(--img-height) + 20px);
+        height: calc(var(--img-height) + 20px);
+        background-image: url('../img/decorations/images-before.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -6%;
+        z-index: -1;
+    }
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -33%;
+        z-index: -1;
+        background: radial-gradient(50% 50% at 50% 50%, rgba(248, 206, 143, 0.55) 0%, rgba(255, 255, 255, 0) 100%);
+        filter: blur(25px);
+        width: calc(var(--img-height) * 2);
+        height: calc(var(--img-height) * 2);
+    }
+    @media (max-width: 767px) {
+        &::before {
+            left: -4%;
+            width: calc(var(--img-height) + 10px);
+            height: calc(var(--img-height) + 10px);
+        }
+    }
+}
+
 body {
     min-width: 320px;
 }
