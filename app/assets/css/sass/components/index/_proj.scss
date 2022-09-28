@@ -38,12 +38,12 @@
         }
         &-title {
             font-weight: 700;
-            font-size: 24px;
+            font-size: clamp(18px, 1.5vw, 24px);
             line-height: 1.208em;
         }
         &-text {
             font-weight: 400;
-            font-size: 18px;
+            font-size: clamp(16px, 1vw, 18px);
             line-height: 1.2em;
         }
         &-text, &-title {
@@ -79,8 +79,8 @@
         &-swiper-wrapper {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            grid-auto-rows: 204px;
-            gap: 30px;
+            grid-auto-rows: 160px;
+            gap: clamp(6px, 1.5vw, 30px);
         }
         &-slide {
             &:first-child {
@@ -90,8 +90,17 @@
     }
 }
 
+@media (min-width: 1440px) {
+    .proj {
+        &-swiper-wrapper {
+            grid-auto-rows: 204px;
+        }
+    }
+}
+
 @media (max-width: 1023px) {
     .proj {
+        padding: 60px 0;
         &-nav {
             display: flex;
             gap: 16px;
@@ -102,6 +111,7 @@
             height: unset;
             width: unset;
             margin: unset;
+            width: 30px;
             &::after {
                 display: none;
             }
