@@ -1,5 +1,7 @@
 .about {
     padding: 145px 0 130px;
+    position: relative;
+    z-index: 1;
     &-title {
         max-width: 8.5em;
     }
