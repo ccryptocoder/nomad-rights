@@ -120,5 +120,18 @@
         &-grid {
             margin-top: 44px;
         }
+        &-item {
+            padding: 23px 14px;
+            min-height: 290px;
+            &-title {
+                font-size: clamp(16px, 4vw, 24px); //24
+            }
+            &-text {
+                font-size: clamp(14px, 3vw, 18px); //18
+            }
+            &::after {
+                display: none;
+            }
+        }
     }
 }

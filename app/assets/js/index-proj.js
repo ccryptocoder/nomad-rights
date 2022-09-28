@@ -1,6 +1,6 @@
-const events = ['resize', 'DOMContentLoaded'];
+const projEvents = ['resize', 'DOMContentLoaded'];
 
-events.forEach(e => {
+projEvents.forEach(e => {
     window.addEventListener(e, () => {
         if (window.matchMedia("(max-width: 1023px)").matches) {
             const projSwiper = new Swiper('#projSwiper', {
