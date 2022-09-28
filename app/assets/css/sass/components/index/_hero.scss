@@ -93,5 +93,17 @@
         &-text {
             font-size: 14px;
         }
+        &-btn {
+            bottom: -24px;
+            img {
+                --size: 65px;
+                width: var(--size);
+                height: var(--size);
+            }
+            &::after {
+                width: 120px;
+                height: 70px;
+            }
+        }
     }
 }
