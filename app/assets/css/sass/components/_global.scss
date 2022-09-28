@@ -9,6 +9,20 @@
     }
 }
 
+.highlighted {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        height: 27px;
+        width: 100%;
+        background-color: var(--clr-300);
+        bottom: 5px;
+        left: 0;
+        z-index: -1;
+    }
+}
+
 body {
     min-width: 320px;
 }

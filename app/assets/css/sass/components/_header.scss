@@ -91,6 +91,7 @@
     line-height: 20px;
     color: var(--clr-150);
     border: 1px solid var(--clr-200);
+    background-color: var(--clr-300);
     &-form {
         display: flex;
         justify-content: space-between;
@@ -170,6 +171,8 @@
             font-size: 12px;
             line-height: 15px;
             width: 80%;
+            z-index: 100;
+            box-shadow: 50px 6px 0px 6px rgba(255, 255, 255, 0.75), -50px 6px 0px 6px rgba(255, 255, 255, 0.75);
             &.active {
                 display: block;
                 position: absolute;
@@ -185,6 +188,7 @@
             align-items: center;
             gap: clamp(20px, 12vh, 110px);
             justify-content: space-between;
+            z-index: 100;
         }
         &-menu {
             ul {

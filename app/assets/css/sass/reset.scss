@@ -44,3 +44,7 @@ a:not([class]) {
 html:focus-within {
     scroll-behavior: smooth;
 }
+
+button {
+    cursor: pointer;
+}
