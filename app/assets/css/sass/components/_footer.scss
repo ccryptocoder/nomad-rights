@@ -21,14 +21,14 @@
                 text-decoration: inherit;
                 color: inherit;
             }
-            @media (min-width: 1024px) {
-                column-gap: clamp(8px, .8vw, 15px);
-                justify-content: center;
-            }
             @media (min-width: 768px) {
                 display: flex;
                 justify-content: space-between;
                 column-gap: 15px;
+            }
+            @media (min-width: 1024px) {
+                column-gap: clamp(8px, .8vw, 15px);
+                justify-content: center;
             }
             @media (max-width: 767px) {
                 li {
