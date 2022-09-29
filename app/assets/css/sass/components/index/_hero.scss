@@ -87,6 +87,9 @@
 
 @media (max-width: 767px) {
     .hero {
+        &-subtitle {
+            font-size: 18px;
+        }
         &-title {
             font-size: 60px;
         }
