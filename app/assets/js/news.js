@@ -16,6 +16,9 @@ projEvents.forEach(e => {
                     576: {
                         slidesPerView: 2,
                         spaceBetween: 20
+                    },
+                    320: {
+                        spaceBetween: 10
                     }
                 }
             });
