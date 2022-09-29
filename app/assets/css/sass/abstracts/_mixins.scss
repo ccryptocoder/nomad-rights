@@ -1,0 +1,11 @@
+@mixin contacts-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: var(--ff-100);
+    color: var(--clr-100);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2em;
+    text-decoration: none;
+}
