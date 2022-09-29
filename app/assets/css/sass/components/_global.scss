@@ -110,3 +110,27 @@ body {
         margin-left: .6em;
     }
 }
+
+.title-curve {
+    position: relative;
+    z-index: 1;
+    &::after {
+        position: absolute;
+        content: '';
+        background-image: url("data:image/svg+xml,%3Csvg width='446' height='53' viewBox='0 0 446 53' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M214 53C123.945 53 45.4776 23.5002 2.57895e-06 23.5002L4.36685e-05 0.750202L446 0.750104L446 23.5002C389.123 23.5003 304.055 53 214 53Z' fill='white'/%3E%3C/svg%3E ");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 446px;
+        height: 52px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -48%;
+        z-index: -1;
+    }
+    @media (max-width: 1023px) {
+        &::after {
+            width: 205px;
+            bottom: -78%;
+        }
+    }
+}

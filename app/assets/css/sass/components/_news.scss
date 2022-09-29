@@ -1,0 +1,147 @@
+.news {
+    padding: 100px 0 80px;
+    &-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 35px 70px 35px 30px;
+        text-decoration: none;
+        position: relative;
+        z-index: 1;
+        &-title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 1.2em;
+            text-transform: uppercase;
+        }
+        &-text {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.2em;
+            margin-top: 0.3125em;
+        }
+        &-title, &-text {
+            font-family: var(--ff-100);
+            color: var(--clr-300);
+        }
+        &-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            &::after {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_242_440)'%3E%3Crect width='30' height='30' rx='15' fill='white'/%3E%3Cpath d='M12 6V8.4H19.908L6 22.308L7.692 24L21.6 10.092V18H24V6H12Z' fill='%231F1F1F'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_242_440'%3E%3Crect width='30' height='30' rx='15' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            --size: 30px;
+            width: var(--size);
+            height: var(--size);
+            right: 30px;
+            bottom: 35px;
+        }
+        &:nth-child(3n + 1) {
+            .news-item-img {
+                &::after {
+                    background-image: linear-gradient(180deg, rgba(202, 130, 63, 0.6) 0%, rgba(0, 13, 40, 0.6) 100%);
+                    backdrop-filter: blur(5px);
+                }
+            }
+        }
+        &:nth-child(3n + 2) {
+            .news-item-img {
+                &::after {
+                    background-image: linear-gradient(180deg, rgba(54, 54, 54, 0.6) 0%, rgba(0, 13, 40, 0.6) 100%);
+                }
+            }
+        }
+        &:nth-child(3n + 3) {
+            .news-item-img {
+                &::after {
+                    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 13, 40, 0.6) 100%);
+                }
+            }
+        }
+    }
+    &-grid {
+        padding: 80px 0;
+        background: url('../img/decorations/news-bg.png') center center / cover no-repeat;
+    }
+}
+
+@media (min-width: 1024px) {
+    .news {
+        &-swiper-wrapper {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: minmax(312px, auto);
+            gap: clamp(10px, 2vw, 30px);
+        }
+        &-item {
+            &:nth-child(1) {
+                grid-column: 1/3;
+            }
+            &:not(:nth-child(1)) {
+                .news-item-text {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .news {
+        &-nav {
+            display: flex;
+            gap: 16px;
+        }
+        &-prev, &-next {
+            inset: unset;
+            position: static;
+            height: unset;
+            width: unset;
+            margin: unset;
+            width: 30px;
+            &::after {
+                display: none;
+            }
+        }
+        &-see-more {
+            margin-top: 44px;
+        }
+        &-item {
+            min-height: 290px;
+            &-text {
+                display: none;
+            }
+            &::after {
+                --size: 24px;
+            }
+        }
+    }
+}

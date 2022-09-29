@@ -57,7 +57,7 @@
 @media (min-width: 1024px) {
     .about {
         &-cols {
-            grid-template-columns: minmax(55%, 763px) 45%;
+            grid-template-columns: minmax(55%, 763px) 40%;
             column-gap: clamp(10px, 3vw, 50px);
             &:first-child {
                 align-items: flex-end;
