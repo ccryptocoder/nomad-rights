@@ -61,6 +61,17 @@
         width: calc(var(--img-height) * 2);
         height: calc(var(--img-height) * 2);
     }
+    &.img-decorated-r {
+        &::after {
+            left: auto;
+            right: calc(var(--img-height) * -1 + 6%);
+        }
+    }
+    &.img-decorated-shine {
+        &::before {
+            display: none;
+        }
+    }
     @media (max-width: 767px) {
         &::before {
             left: -4%;
