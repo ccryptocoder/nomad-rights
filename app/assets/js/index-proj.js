@@ -11,6 +11,13 @@ projEvents.forEach(e => {
                     prevEl: '#projPrev',
                     nextEl: '#projNext',
                 },
+
+                breakpoints: {
+                    576: {
+                        slidesPerView: 2,
+                        spaceBetween: 20
+                    }
+                }
             });
         }
     })
