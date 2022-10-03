@@ -8,3 +8,7 @@
 @import 'components/about/hero';
 
 @import 'components/footer';
+
+.spec {
+    padding: clamp(70px, 15vw, 140px) 0 clamp(50px, 13vw, 130px);
+}

@@ -160,3 +160,20 @@ body {
         column-gap: clamp(15px, 3vw, 30px);
     }
 }
+
+.text-100 {
+    font-family: var(--ff-100);
+    color: var(--clr-100);
+    font-weight: 400;
+    font-size: clamp(16px, 1.5vw, 20px);
+    line-height: 1.2em;
+}
+
+.paragraph-title {
+    font-family: var(--ff-100);
+    color: var(--clr-100);
+    font-weight: 600;
+    font-size: clamp(20px, 1.5vw, 24px);
+    line-height: 1.208em;
+    margin-bottom: 1em;
+}
