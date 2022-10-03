@@ -1,9 +1,10 @@
 const newsEvents = ['resize', 'DOMContentLoaded'];
+let newsSwiper = undefined;
 
 projEvents.forEach(e => {
     window.addEventListener(e, () => {
         if (window.matchMedia("(max-width: 1023px)").matches) {
-            const newsSwiper = new Swiper('#newsSwiper', {
+            newsSwiper = new Swiper('#newsSwiper', {
                 loop: false,
               
                 // Navigation arrows
@@ -22,6 +23,10 @@ projEvents.forEach(e => {
                     }
                 }
             });
+        } else {
+            if (newsSwiper != undefined && newsSwiper != null) {
+                newsSwiper.destroy();
+            }
         }
     })
 })
