@@ -145,3 +145,18 @@ body {
         }
     }
 }
+
+.bg-100 {
+    background-image: url('../img/decorations/bg-100.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.cols-5-7 {
+    @media (min-width: 1024px) {
+        display: grid;
+        grid-template-columns: 41% 1fr;
+        column-gap: clamp(15px, 3vw, 30px);
+    }
+}
