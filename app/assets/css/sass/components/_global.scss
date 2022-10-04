@@ -167,6 +167,9 @@ body {
     font-weight: 400;
     font-size: clamp(16px, 1.5vw, 20px);
     line-height: 1.2em;
+    strong {
+        font-weight: 600;
+    }
 }
 
 .paragraph-title {
