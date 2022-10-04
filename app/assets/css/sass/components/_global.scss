@@ -161,6 +161,10 @@ body {
     }
 }
 
+.cols-align-center {
+    align-items: center;
+}
+
 .text-100 {
     font-family: var(--ff-100);
     color: var(--clr-100);
