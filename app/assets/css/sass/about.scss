@@ -15,3 +15,15 @@
 .spec {
     padding: clamp(70px, 15vw, 140px) 0 clamp(50px, 13vw, 130px);
 }
+
+.year {
+    padding: padding: clamp(40px, 15vw, 80px) 0 clamp(50px, 13vw, 100px);
+    &-box {
+        padding: clamp(25px, 3vw, 40px) clamp(30px, 4vw, 70px);
+        display: grid;
+        place-content: center;
+        @media (min-width: 1024px) {
+            max-width: max-content;
+        }
+    }
+}

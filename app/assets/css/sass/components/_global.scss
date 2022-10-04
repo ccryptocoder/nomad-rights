@@ -177,6 +177,14 @@ body {
     }
 }
 
+.col {
+    &:not(:first-child) {
+        @media (max-width: 1023px) {
+            margin-top: 30px;
+        }
+    }
+}
+
 .cols-align-center {
     align-items: center;
 }
@@ -235,4 +243,9 @@ body {
         top: 0;
         left: 0;
     }
+}
+
+.border-100 {
+    border: 15px solid transparent;
+    border-image: url('../img/decorations/bg-100.jpg') 30 round;
 }
