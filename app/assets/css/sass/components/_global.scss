@@ -161,6 +161,22 @@ body {
     }
 }
 
+.cols-7-5 {
+    @media (min-width: 1024px) {
+        display: grid;
+        grid-template-columns: 1fr 41%;
+        column-gap: clamp(15px, 3vw, 30px);
+    }
+}
+
+.cols-reverse {
+    @media (min-width: 1024px) {
+        & > div:nth-child(1) {
+            grid-column: 2/3;
+        }
+    }
+}
+
 .cols-align-center {
     align-items: center;
 }
@@ -201,5 +217,22 @@ body {
         bottom: -50%;
         left: -15%;
         z-index: -1;
+    }
+}
+
+.section-top {
+    position: relative;
+    --height: clamp(42px, 5vw, 95px);
+    padding-top: calc(var(--height) * 2.2);
+    &::before {
+        content: '';
+        height: var(--height);
+        width: 100%;
+        background: url('../img/decorations/section-divider.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }

@@ -1,0 +1,19 @@
+.rights {
+    padding-bottom: clamp(48px, 5vw, 95px);
+    &-col {
+        &:nth-child(1) {
+            grid-row: 1;
+            justify-self: flex-end;
+        }
+    }
+    &-title {
+        @media (min-width: 1024px) {
+            padding-bottom: 40px;
+        }
+    }
+    &-text {
+        @media (max-width: 1023px) {
+            margin-top: 1em;
+        }
+    }
+}
