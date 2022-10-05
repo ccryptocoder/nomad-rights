@@ -1,0 +1,21 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'components/fonts'; 
+@import 'components/global';
+@import 'components/header';
+
+@import 'components/projects/proj';
+@import 'components/content';
+
+@import 'components/footer';
+
+.proj-item {
+    &-current {
+        border: 5px solid var(--clr-700);
+    }
+    &:not(.proj-item-current) {
+        filter: grayscale(1);
+        transform: scale(.95);
+    }
+}

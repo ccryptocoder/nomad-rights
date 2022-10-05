@@ -72,4 +72,7 @@
             color: var(--clr-300);
         }
     }
+    &-content {
+        padding: 0 0 clamp(30px, 3vw, 68px);
+    }
 }
