@@ -7,6 +7,18 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        &-wrap {
+            flex-wrap: wrap;
+            row-gap: 20px;
+        }
+    }
+    &-search {
+        @media (min-width: 768px) {
+            min-width: min(438px, 100%);
+        }
+        @media (max-width: 575px) {
+            min-width: 100%;
+        }
     }
     &-wrap {
         margin-top: 55px;
@@ -28,6 +40,9 @@
         }
         &-minimized {
             max-height: 230px;
+        }
+        &-normal {
+            max-height: 45vh;
         }
     }
     &-item {

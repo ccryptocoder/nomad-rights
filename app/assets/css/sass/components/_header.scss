@@ -155,8 +155,8 @@
 }
 
 @media (max-width: 575px) {
-    .search {
-        &-form {
+    .search.header-search {
+        .search-form {
             input[type=submit] {
                 background: url('../img/icons/arrow-top-right.svg') center center / contain no-repeat;
                 --size: 24px;
