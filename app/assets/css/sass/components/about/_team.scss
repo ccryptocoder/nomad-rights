@@ -15,8 +15,8 @@
         position: relative;
         height: 540px;
         width: 100%;
-        max-width: 90px;
-        padding: 40px 34px;
+        max-width: clamp(68px, 5vw, 90px);
+        padding: clamp(20px, 3vw, 40px) clamp(20px, 2.5vw, 34px);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -73,7 +73,7 @@
             font-weight: 600;
             color: var(--clr-300);
             &-vertical {
-                font-size: 24px;
+                font-size: clamp(20px, 2vw, 24px);
                 line-height: 1.208em;
                 writing-mode: vertical-rl;
                 transform: rotate(-180deg) translateY(0px); //-80px
@@ -81,7 +81,7 @@
                 transition: opacity .4s;
             }
             &-horizontal {
-                font-size: 32px;
+                font-size: clamp(24px, 2vw, 32px);
                 line-height: 1.218em;
                 display: none;
             }
@@ -100,7 +100,6 @@
             scroll-snap-type: x mandatory;
         }
         &-item {
-            padding: 20px;
             scroll-snap-align: start;
             height: 400px;
             width: 94%;
@@ -112,7 +111,6 @@
                     display: none;
                 }
                 &-horizontal {
-                    font-size: 24px;
                     display: block;
                 }
             }
