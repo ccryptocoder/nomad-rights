@@ -153,6 +153,10 @@ body {
     background-repeat: no-repeat;
 }
 
+.bg-200 {
+    background: url('../img/decorations/news-bg.png') center center / cover no-repeat;
+}
+
 .cols-5-7 {
     @media (min-width: 1024px) {
         display: grid;
