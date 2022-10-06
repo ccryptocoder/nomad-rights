@@ -1,0 +1,52 @@
+.hero {
+    min-height: 75vh;
+    padding: clamp(80px, 40vw, 260px) 0;
+    &-title {
+        max-width: 5.83em;
+    }
+    &-item {
+        display: grid;
+        justify-items: center;
+        max-width: 150px;
+        font-family: var(--ff-100);
+        color: var(--clr-400);
+        font-weight: 500;
+        text-align: center;
+        &-title {
+            font-size: 16px;
+            line-height: 1.2em;
+            margin-top: 0.9375em;
+        }
+    }
+    &-wrap {
+        position: relative;
+    }
+    &-swiper {
+        max-width: 825px;
+        @media (min-width: 1024px) {
+            max-width: clamp(555px, 45vw, 825px);
+        }
+        &-nav {
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+        }
+        &-prev, &-next {
+            inset: unset;
+            position: static;
+            height: unset;
+            width: unset;
+            margin: unset;
+            width: 30px;
+            &::after {
+                display: none;
+            }
+        }
+        &-slide {
+            display: grid;
+            place-content: center;
+        }
+    }
+}
