@@ -1,7 +1,7 @@
 const newsEvents = ['resize', 'DOMContentLoaded'];
 let newsSwiper = undefined;
 
-projEvents.forEach(e => {
+newsEvents.forEach(e => {
     window.addEventListener(e, () => {
         if (window.matchMedia("(max-width: 1023px)").matches) {
             newsSwiper = new Swiper('#newsSwiper', {
