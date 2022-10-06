@@ -10,7 +10,7 @@ const swiper = new Swiper('#partnersSwiper', {
         320: {
             slidesPerView: 1,
         },
-        375: {
+        340: {
             slidesPerView: 2,
         },
         576: {
