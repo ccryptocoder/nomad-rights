@@ -1,0 +1,14 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'components/fonts'; 
+@import 'components/global';
+@import 'components/header';
+
+@import 'components/news';
+
+@import 'components/footer';
+
+.news-see-more {
+    margin-top: 22px;
+}
