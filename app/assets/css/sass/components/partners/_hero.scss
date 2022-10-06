@@ -1,6 +1,29 @@
 .hero {
     min-height: 75vh;
     padding: clamp(80px, 40vw, 260px) 0;
+    position: relative;
+    --elem-height: clamp(278px, 23.5vw, 410px);
+    --elem-width: calc(var(--elem-height) / 2);
+    z-index: 1;
+    &::before {
+        position: absolute;
+        content: '';    
+        background-image: url('../img/decorations/partners-elem.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: var(--elem-width);
+        height: var(--elem-height);
+        left: 0;
+        top: 0;
+        @media (min-width: 1360px) {
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &-cols {
+        position: relative;
+        z-index: 2;
+    }
     &-title {
         max-width: 5.83em;
     }
