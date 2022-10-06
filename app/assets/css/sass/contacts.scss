@@ -1,0 +1,17 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'components/fonts'; 
+@import 'components/global';
+@import 'components/header';
+
+@import 'components/contacts';
+
+@import 'components/footer';
+
+.contacts {
+    padding: clamp(80px, 22vw, 168px) 0;
+    @media (min-width: 1023px) {
+        min-height: 75vh;
+    }
+}
