@@ -18,6 +18,6 @@ headerSearchBtn.addEventListener('click', () => {
 })
 
 const base = document.createElement('base');
-base.href = '/nomad-rights/app/'; // 
+base.href = 'https://ccryptocoder.github.io/nomad-rights/app/'; // /nomad-rights/app/
 
 document.head.appendChild(base);
