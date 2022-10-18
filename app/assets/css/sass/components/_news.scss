@@ -63,6 +63,10 @@
             height: var(--size);
             right: 30px;
             bottom: 35px;
+            transition: all .5s;
+        }
+        &:hover::after {
+            transform: rotate(90deg);
         }
         &:nth-child(1) {
             .news-item-img {

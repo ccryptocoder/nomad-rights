@@ -62,6 +62,10 @@
             --size: 30px;
             width: var(--size);
             height: var(--size);
+            transition: all .5s;
+        }
+        &:hover::after {
+            transform: rotate(90deg);
         }
     }
     &-see-more {
