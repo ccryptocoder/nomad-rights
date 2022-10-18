@@ -52,7 +52,7 @@
         justify-content: space-between;
         width: 100%;
         @media (min-width: 1024px) {
-            max-width: clamp(330px, 28vw, 440px);
+            max-width: clamp(300px, 28vw, 440px);
         }
         @media (max-width: 1023px) {
             margin-top: 50px;
