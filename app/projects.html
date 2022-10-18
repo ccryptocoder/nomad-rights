@@ -9,26 +9,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="assets/css/reset.min.css">
     <link rel="stylesheet" href="assets/css/projects.min.css">
 </head>
 <body class="body">
     
-    <header class="header">
+    <header class="header" data-aos="fade-down">
         <div class="container">
             <div class="header-wrap">
-                <a href="/nomad-rights/app/" class="header-logo">
+                <a href="/" class="header-logo">
                     <img src="assets/img/icons/logo.svg" alt="">
                 </a>
                 <div class="header-mid" data-header-mid>
                     <nav class="header-menu">
                         <ul>
-                            <li><a href="/nomad-rights/app/about.html">Об организации</a></li>
-                            <li><a href="/nomad-rights/app/projects.html">Проекты</a></li>
-                            <li><a href="/nomad-rights/app/documents.html">Документы</a></li>
-                            <li><a href="/nomad-rights/app/news.html">Новости</a></li>
-                            <li><a href="/nomad-rights/app/partners.html">Партнеры</a></li>
-                            <li><a href="/nomad-rights/app/contacts.html">Контакты</a></li>
+                            <li><a href="/about.html">Об организации</a></li>
+                            <li><a href="/projects.html">Проекты</a></li>
+                            <li><a href="/documents.html">Документы</a></li>
+                            <li><a href="/news.html">Новости</a></li>
+                            <li><a href="/partners.html">Партнеры</a></li>
+                            <li><a href="/contacts.html">Контакты</a></li>
                         </ul>
                     </nav>
                     <div class="header-socials">
@@ -71,8 +72,8 @@
     <section class="proj">
         <div class="container">
             <div class="proj-top">
-                <h1 class="section-title proj-title title-curve">Проекты</h1>
-                <div class="proj-nav">
+                <h1 class="section-title proj-title title-curve"><span data-aos="fade-up">Проекты</span></h1>
+                <div class="proj-nav" data-aos="fade-up">
                     <div class="swiper-button-prev proj-prev" id="projPrev">
                         <img src="assets/img/icons/slider-left.svg" alt="">
                     </div>
@@ -86,12 +87,12 @@
         <div class="proj-wrap bg-200">
             <div class="container">
                 <!-- Slider main container -->
-                <div class="swiper proj-swiper" id="projSwiper">
+                <div class="swiper proj-swiper" id="projSwiper" data-aos="fade-up">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper proj-swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide proj-slide">
-                            <a href="/nomad-rights/app/projects-single.html" class="proj-item">
+                            <a href="/projects-single.html" class="proj-item">
                                 <div class="proj-item-img">
                                     <img src="assets/img/proj-1.jpg" alt="">
                                 </div>
@@ -101,7 +102,7 @@
                         </div>
 
                         <div class="swiper-slide proj-slide">
-                            <a href="/nomad-rights/app/projects-single-2.html" class="proj-item">
+                            <a href="/projects-single-2.html" class="proj-item">
                                 <div class="proj-item-img">
                                     <img src="assets/img/proj-2.jpg" alt="">
                                 </div>
@@ -111,7 +112,7 @@
                         </div>
 
                         <div class="swiper-slide proj-slide">
-                            <a href="/nomad-rights/app/projects-single-3.html" class="proj-item">
+                            <a href="/projects-single-3.html" class="proj-item">
                                 <div class="proj-item-img">
                                     <img src="assets/img/proj-3.jpg" alt="">
                                 </div>
@@ -137,17 +138,17 @@
 
 </main>
 
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up">
         <div class="container">
             <div class="footer-flex">
                 <nav class="footer-nav">
                     <ul class="footer-nav-list">
-                        <li><a href="/nomad-rights/app/about.html">Об организации</a></li>
-                        <li><a href="/nomad-rights/app/projects.html">Проекты</a></li>
-                        <li><a href="/nomad-rights/app/documents.html">Документы</a></li>
-                        <li><a href="#">СМИ</a></li>
-                        <li><a href="/nomad-rights/app/partners.html">Партнеры</a></li>
-                        <li><a href="/nomad-rights/app/contacts.html">Контакты</a></li>
+                        <li><a href="/about.html">Об организации</a></li>
+                        <li><a href="/projects.html">Проекты</a></li>
+                        <li><a href="/documents.html">Документы</a></li>
+                        <li><a href="/news.html">Новости</a></li>
+                        <li><a href="/partners.html">Партнеры</a></li>
+                        <li><a href="/contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="footer-wrap">
@@ -180,6 +181,8 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/aos-init.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="assets/js/projects.js"></script>
     <script src="assets/js/header.js"></script>

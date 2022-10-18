@@ -9,26 +9,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" media="only screen and (max-width: 1023px)">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="assets/css/reset.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 <body class="body">
     
-    <header class="header">
+    <header class="header" data-aos="fade-down">
         <div class="container">
             <div class="header-wrap">
-                <a href="/nomad-rights/app/" class="header-logo">
+                <a href="/" class="header-logo">
                     <img src="assets/img/icons/logo.svg" alt="">
                 </a>
                 <div class="header-mid" data-header-mid>
                     <nav class="header-menu">
                         <ul>
-                            <li><a href="/nomad-rights/app/about.html">Об организации</a></li>
-                            <li><a href="/nomad-rights/app/projects.html">Проекты</a></li>
-                            <li><a href="/nomad-rights/app/documents.html">Документы</a></li>
-                            <li><a href="/nomad-rights/app/news.html">Новости</a></li>
-                            <li><a href="/nomad-rights/app/partners.html">Партнеры</a></li>
-                            <li><a href="/nomad-rights/app/contacts.html">Контакты</a></li>
+                            <li><a href="/about.html">Об организации</a></li>
+                            <li><a href="/projects.html">Проекты</a></li>
+                            <li><a href="/documents.html">Документы</a></li>
+                            <li><a href="/news.html">Новости</a></li>
+                            <li><a href="/partners.html">Партнеры</a></li>
+                            <li><a href="/contacts.html">Контакты</a></li>
                         </ul>
                     </nav>
                     <div class="header-socials">
@@ -70,9 +71,9 @@
 
     <section class="hero">
         <div class="container">
-            <div class="hero-subtitle">Общественный фонд</div>
-            <h1 class="hero-title"><span class="highlighted">nomad rights</span></h1>
-            <div class="hero-text">Работа в области противодействия дискриминации и соблюдения права на правосубъектность.</div>
+            <div class="hero-subtitle" data-aos="fade-down">Общественный фонд</div>
+            <h1 class="hero-title" data-aos="fade-up"><span class="highlighted">nomad rights</span></h1>
+            <div class="hero-text" data-aos="fade-up">Работа в области противодействия дискриминации и соблюдения права на правосубъектность.</div>
             <button class="hero-btn">
                 <img src="assets/img/icons/btn-arrow-down.svg" alt="">
             </button>
@@ -91,20 +92,20 @@
     <section class="about">
         <div class="container">
             <div class="about-cols">
-                <div class="about-img img-decorated" style="--img-height: 344px">
+                <div class="about-img img-decorated" style="--img-height: 344px" data-aos="fade-up">
                     <img src="assets/img/index-about.jpg" alt="">
                 </div>
                 <div class="about-wrap">
-                    <h2 class="section-title about-title">Об организации</h2>
-                    <a href="#" class="about-more">Подробнее</a>
+                    <h2 class="section-title about-title" data-aos="fade-up">Об организации</h2>
+                    <a href="/about.html" class="about-more" data-aos="fade-up">Подробнее</a>
                 </div>
             </div>
             <div class="about-cols">
-                <div class="about-text">
+                <div class="about-text" data-aos="fade-up">
                     <p>Организация была официально зарегистрирована Министерством юстиции Республики Казахстан   г. Нур-Султан как негосударственная некоммерческая организация 18 июня 2021 года.</p>
                     <p>Руководящий орган, состоящий из четырех человек, собирается ежемесячно для принятия решений по стратегическим направлениям организации.</p>
                 </div>
-                <div class="about-text">
+                <div class="about-text" data-aos="fade-up">
                     <p>«Nomad Rights» полностью соответствует всем требованиям национального законодательства и работает по всей территории Республики Казахстан. Организация в своей работе руководствуется уставом и стратегическим планом развития</p>
                 </div>
             </div>
@@ -115,7 +116,7 @@
         <div class="container">
             <div class="proj-wrap">
                 <div class="proj-side">
-                    <h2 class="section-title proj-title">Наши проекты</h2>
+                    <h2 class="section-title proj-title" data-aos="fade-up">Наши проекты</h2>
                     <div class="proj-nav l-hidden">
                         <div class="swiper-button-prev proj-prev" id="projPrev">
                             <img src="assets/img/icons/slider-left.svg" alt="">
@@ -124,16 +125,16 @@
                             <img src="assets/img/icons/slider-right.svg" alt="">
                         </div>
                     </div>
-                    <a href="/nomad-rights/app/projects.html" class="proj-see-more see-more s-hidden">Смотреть все проекты</a>
+                    <a href="/projects.html" class="proj-see-more see-more s-hidden" data-aos="fade-up">Смотреть все проекты</a>
                 </div>
 
-                <div class="proj-grid">
+                <div class="proj-grid" data-aos="fade-up">
                     <div class="swiper proj-swiper" id="projSwiper">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper proj-swiper-wrapper">
                             <!-- Slides -->
                             <div class="swiper-slide proj-slide">
-                                <a href="/nomad-rights/app/projects-single.html" class="proj-item">
+                                <a href="/projects-single.html" class="proj-item">
                                     <div class="proj-item-img">
                                         <img src="assets/img/proj-1.jpg" alt="">
                                     </div>
@@ -143,7 +144,7 @@
                             </div>
 
                             <div class="swiper-slide proj-slide">
-                                <a href="/nomad-rights/app/projects-single-2.html" class="proj-item">
+                                <a href="/projects-single-2.html" class="proj-item">
                                     <div class="proj-item-img">
                                         <img src="assets/img/proj-2.jpg" alt="">
                                     </div>
@@ -153,7 +154,7 @@
                             </div>
 
                             <div class="swiper-slide proj-slide">
-                                <a href="/nomad-rights/app/projects-single-3.html" class="proj-item">
+                                <a href="/projects-single-3.html" class="proj-item">
                                     <div class="proj-item-img">
                                         <img src="assets/img/proj-3.jpg" alt="">
                                     </div>
@@ -165,7 +166,7 @@
                     </div>
                 </div>
 
-                <a href="/nomad-rights/app/projects.html" class="proj-see-more see-more l-hidden">Смотреть все проекты</a>
+                <a href="/projects.html" class="proj-see-more see-more l-hidden" data-aos="fade-up">Смотреть все проекты</a>
 
             </div>
         </div>
@@ -174,7 +175,7 @@
     <section class="news">
         <div class="container">
             <div class="news-top">
-                <h2 class="section-title news-title title-curve">новости</h2>
+                <h2 class="section-title news-title title-curve"><span data-aos="fade-up">Новости</span></h2>
                 <div class="news-nav l-hidden">
                     <div class="swiper-button-prev news-prev" id="newsPrev">
                         <img src="assets/img/icons/slider-left.svg" alt="">
@@ -183,18 +184,18 @@
                         <img src="assets/img/icons/slider-right.svg" alt="">
                     </div>
                 </div>
-                <a href="/nomad-rights/app/news.html" class="see-more s-hidden">Смотреть все новости</a>
+                <a href="/news.html" class="see-more s-hidden" data-aos="fade-up">Смотреть все новости</a>
             </div>
         </div>
 
         <div class="news-grid bg-200">
             <div class="container">
                 <!-- Slider main container -->
-                <div class="swiper news-swiper" id="newsSwiper">
+                <div class="swiper news-swiper" id="newsSwiper" data-aos="fade-up">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper news-swiper-wrapper">
 
-                        <a href="/nomad-rights/app/news-single.html" class="swiper-slide news-slide news-item">
+                        <a href="/news-single.html" class="swiper-slide news-slide news-item">
                             <div class="news-item-img">
                                 <img src="assets/img/news-item-1.jpg" alt="">
                             </div>
@@ -202,7 +203,7 @@
                             <div class="news-item-text">Краткое описание новости краткое описание новости</div>
                         </a>
 
-                        <a href="/nomad-rights/app/news-single.html" class="swiper-slide news-slide news-item">
+                        <a href="/news-single.html" class="swiper-slide news-slide news-item">
                             <div class="news-item-img">
                                 <img src="assets/img/news-item-1.jpg" alt="">
                             </div>
@@ -210,7 +211,7 @@
                             <div class="news-item-text">Краткое описание новости Краткое описание новости</div>
                         </a>
 
-                        <a href="/nomad-rights/app/news-single.html" class="swiper-slide news-slide news-item">
+                        <a href="/news-single.html" class="swiper-slide news-slide news-item">
                             <div class="news-item-img">
                                 <img src="assets/img/news-item-1.jpg" alt="">
                             </div>
@@ -221,7 +222,7 @@
                     </div>
 
                 </div>
-                <a href="/nomad-rights/app/news.html" class="see-more news-see-more l-hidden">Смотреть все новости</a>
+                <a href="/news.html" class="see-more news-see-more l-hidden">Смотреть все новости</a>
             </div>
         </div>
     </section>
@@ -229,12 +230,12 @@
     <section class="docs">
         <div class="container">
             <div class="docs-top">
-                <h2 class="section-title docs-title">Документы</h2>
-                <a href="/nomad-rights/app/documents.html" class="see-more s-hidden">Смотреть все документы</a>
+                <h2 class="section-title docs-title" data-aos="fade-up">Документы</h2>
+                <a href="/documents.html" class="see-more s-hidden" data-aos="fade-up">Смотреть все документы</a>
             </div>
             <div class="docs-wrap docs-wrap-minimized">
 
-                <div class="docs-item">
+                <div class="docs-item" data-aos="fade">
                     <div class="docs-item-title">Документ 1 название</div>
                     <div class="docs-item-group">
                         <a href="#" class="docs-item-btn docs-item-view" target="_blank">
@@ -246,7 +247,7 @@
                     </div>
                 </div>
 
-                <div class="docs-item">
+                <div class="docs-item" data-aos="fade">
                     <div class="docs-item-title">Документ 2 название</div>
                     <div class="docs-item-group">
                         <a href="#" class="docs-item-btn docs-item-view" target="_blank">
@@ -258,7 +259,7 @@
                     </div>
                 </div>
 
-                <div class="docs-item">
+                <div class="docs-item" data-aos="fade">
                     <div class="docs-item-title">Документ 3 название</div>
                     <div class="docs-item-group">
                         <a href="#" class="docs-item-btn docs-item-view" target="_blank">
@@ -270,7 +271,7 @@
                     </div>
                 </div>
 
-                <div class="docs-item">
+                <div class="docs-item" data-aos="fade">
                     <div class="docs-item-title">Документ 4 название</div>
                     <div class="docs-item-group">
                         <a href="#" class="docs-item-btn docs-item-view" target="_blank">
@@ -282,7 +283,7 @@
                     </div>
                 </div>
 
-                <div class="docs-item">
+                <div class="docs-item" data-aos="fade">
                     <div class="docs-item-title">Документ 5 название</div>
                     <div class="docs-item-group">
                         <a href="#" class="docs-item-btn docs-item-view" target="_blank">
@@ -296,7 +297,7 @@
 
             </div>
 
-            <a href="/nomad-rights/app/documents.html" class="see-more docs-see-more l-hidden">Смотреть все</a>
+            <a href="/documents.html" class="see-more docs-see-more l-hidden" data-aos="fade-up">Смотреть все</a>
         </div>
     </section>
 
@@ -304,7 +305,7 @@
         <div class="container">
             <div class="partners-flex">
 
-                <div class="partners-wrap">
+                <div class="partners-wrap" data-aos="fade-up">
                     <div class="partners-ticker">
                         <div class="partners-row">
                             <div class="partners-logo">
@@ -341,7 +342,7 @@
                     </div>
                 </div>
 
-                <a href="#" class="partners-link">
+                <a href="#" class="partners-link" data-aos="fade-up">
                     <h2 class="section-title partners-title">НАши Партнеры</h2>
                     <div class="partners-link-arrow">
                         <svg width="126" height="126" viewBox="0 0 126 126" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -359,21 +360,21 @@
         <div class="container">
             <div class="contacts-grid">
                 <div class="contacts-wrap">
-                    <h2 class="section-title contacts-title">Контакты</h2>
+                    <h2 class="section-title contacts-title" data-aos="fade-up">Контакты</h2>
                     <div class="contacts-socials">
-                        <a href="#" class="contacts-item">
+                        <a href="#" class="contacts-item" data-aos="fade-up">
                             <div class="contacts-item-icon">
                                 <img src="assets/img/icons/instagram.svg" alt="instagram">
                             </div>
                             <div class="contacts-item-text">nomad_rights</div>
                         </a>
-                        <a href="mailto:" class="contacts-item">
+                        <a href="mailto:" class="contacts-item" data-aos="fade-up">
                             <div class="contacts-item-icon">
                                 <img src="assets/img/icons/email.svg" alt="instagram">
                             </div>
                             <div class="contacts-item-text">mail@mail.com</div>
                         </a>
-                        <a href="tel:" class="contacts-item">
+                        <a href="tel:" class="contacts-item" data-aos="fade-up">
                             <div class="contacts-item-icon">
                                 <img src="assets/img/icons/phone.svg" alt="instagram">
                             </div>
@@ -381,7 +382,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="contacts-map img-decorated img-decorated-r img-decorated-shine">
+                <div class="contacts-map img-decorated img-decorated-r img-decorated-shine" data-aos="fade">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d186086.43581862762!2d76.80408248081928!3d43.217866704234666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38836e7d16c5cbab%3A0x3d44668fad986d76!2sAlmaty!5e0!3m2!1sen!2skz!4v1664453390471!5m2!1sen!2skz" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
@@ -390,17 +391,17 @@
 
 </main>
 
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up">
         <div class="container">
             <div class="footer-flex">
                 <nav class="footer-nav">
                     <ul class="footer-nav-list">
-                        <li><a href="/nomad-rights/app/about.html">Об организации</a></li>
-                        <li><a href="/nomad-rights/app/projects.html">Проекты</a></li>
-                        <li><a href="/nomad-rights/app/documents.html">Документы</a></li>
-                        <li><a href="#">СМИ</a></li>
-                        <li><a href="/nomad-rights/app/partners.html">Партнеры</a></li>
-                        <li><a href="/nomad-rights/app/contacts.html">Контакты</a></li>
+                        <li><a href="/about.html">Об организации</a></li>
+                        <li><a href="/projects.html">Проекты</a></li>
+                        <li><a href="/documents.html">Документы</a></li>
+                        <li><a href="/news.html">Новости</a></li>
+                        <li><a href="/partners.html">Партнеры</a></li>
+                        <li><a href="/contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="footer-wrap">
@@ -433,6 +434,8 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/aos-init.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="assets/js/index-proj.js"></script>
     <script src="assets/js/news.js"></script>

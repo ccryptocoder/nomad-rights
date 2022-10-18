@@ -9,26 +9,27 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" media="only screen and (max-width: 1023px)">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="assets/css/reset.min.css">
     <link rel="stylesheet" href="assets/css/documents.min.css">
 </head>
 <body class="body">
     
-    <header class="header">
+    <header class="header" data-aos="fade-down">
         <div class="container">
             <div class="header-wrap">
-                <a href="/nomad-rights/app/" class="header-logo">
+                <a href="/" class="header-logo">
                     <img src="assets/img/icons/logo.svg" alt="">
                 </a>
                 <div class="header-mid" data-header-mid>
                     <nav class="header-menu">
                         <ul>
-                            <li><a href="/nomad-rights/app/about.html">Об организации</a></li>
-                            <li><a href="/nomad-rights/app/projects.html">Проекты</a></li>
-                            <li><a href="/nomad-rights/app/documents.html">Документы</a></li>
-                            <li><a href="/nomad-rights/app/news.html">Новости</a></li>
-                            <li><a href="/nomad-rights/app/partners.html">Партнеры</a></li>
-                            <li><a href="/nomad-rights/app/contacts.html">Контакты</a></li>
+                            <li><a href="/about.html">Об организации</a></li>
+                            <li><a href="/projects.html">Проекты</a></li>
+                            <li><a href="/documents.html">Документы</a></li>
+                            <li><a href="/news.html">Новости</a></li>
+                            <li><a href="/partners.html">Партнеры</a></li>
+                            <li><a href="/contacts.html">Контакты</a></li>
                         </ul>
                     </nav>
                     <div class="header-socials">
@@ -71,15 +72,15 @@
     <section class="docs">
         <div class="container">
             <div class="docs-top docs-top-wrap">
-                <h1 class="section-title docs-title">Документы</h1>
-                <div class="search docs-search">
+                <h1 class="section-title docs-title" data-aos="fade-up">Документы</h1>
+                <div class="search docs-search" data-aos="fade-up">
                     <form action="" class="search-form">
                         <input type="text" name="q" placeholder="Поиск">
                         <input type="submit" name="submit" value=" ">
                     </form>
                 </div>
             </div>
-            <div class="docs-wrap docs-wrap-normal">
+            <div class="docs-wrap docs-wrap-normal" data-aos="fade-up">
 
                 <div class="docs-item">
                     <div class="docs-item-title">Документ 1 название</div>
@@ -196,17 +197,17 @@
 
 </main>
 
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up">
         <div class="container">
             <div class="footer-flex">
                 <nav class="footer-nav">
                     <ul class="footer-nav-list">
-                        <li><a href="/nomad-rights/app/about.html">Об организации</a></li>
-                        <li><a href="/nomad-rights/app/projects.html">Проекты</a></li>
-                        <li><a href="/nomad-rights/app/documents.html">Документы</a></li>
-                        <li><a href="#">СМИ</a></li>
-                        <li><a href="/nomad-rights/app/partners.html">Партнеры</a></li>
-                        <li><a href="/nomad-rights/app/contacts.html">Контакты</a></li>
+                        <li><a href="/about.html">Об организации</a></li>
+                        <li><a href="/projects.html">Проекты</a></li>
+                        <li><a href="/documents.html">Документы</a></li>
+                        <li><a href="/news.html">Новости</a></li>
+                        <li><a href="/partners.html">Партнеры</a></li>
+                        <li><a href="/contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
                 <div class="footer-wrap">
@@ -239,6 +240,8 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/aos-init.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="assets/js/header.js"></script>
 </body>

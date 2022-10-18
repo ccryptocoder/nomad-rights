@@ -16,3 +16,8 @@ const headerSearch = document.querySelector('[data-header-search]');
 headerSearchBtn.addEventListener('click', () => {
     headerSearch.classList.toggle('active');
 })
+
+const base = document.createElement('base');
+base.href = '/nomad-rights/app/'; // 
+
+document.head.appendChild(base);
