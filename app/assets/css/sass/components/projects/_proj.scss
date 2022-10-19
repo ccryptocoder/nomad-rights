@@ -8,6 +8,14 @@
     &-nav {
         display: flex;
         gap: 16px;
+        &-bottom {
+            margin-top: 26px;
+            margin-left: auto;
+            max-width: max-content;
+            @media (max-width: 575px) {
+                margin: 26px auto 0;
+            }
+        }
     }
     &-prev, &-next {
         inset: unset;
