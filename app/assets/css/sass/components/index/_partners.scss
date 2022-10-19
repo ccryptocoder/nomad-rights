@@ -23,9 +23,15 @@
         @media (max-width: 575px) {
             gap: 24px;
         }
+        &:hover {
+            .partners-link-arrow {
+                transform: rotate(-45deg);
+            }
+        }
         &-arrow {
             flex-shrink: 0;
             --size: clamp(70px, 6.5vw, 126px);
+            transition: all .5s;
             svg {
                 height: var(--size);
                 width: var(--size);
