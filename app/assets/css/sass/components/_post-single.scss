@@ -19,6 +19,7 @@
         font-weight: 400;
         font-size: clamp(16px, 2vw, 20px);
         line-height: 1.2em;
+        min-height: 420px;
     }
     &-thumbnail {
         object-fit: cover;

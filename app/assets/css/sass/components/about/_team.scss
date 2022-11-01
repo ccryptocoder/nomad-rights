@@ -79,6 +79,9 @@
                 transform: rotate(-180deg) translateY(0px); //-80px
                 opacity: 1;
                 transition: opacity .4s;
+                br {
+                    display: none;
+                }
             }
             &-horizontal {
                 font-size: clamp(24px, 2vw, 32px);

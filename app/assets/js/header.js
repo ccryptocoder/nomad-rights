@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 
     const base = document.createElement('base');
-    base.href = 'https://ccryptocoder.github.io/nomad-rights/app/'; // https://ccryptocoder.github.io/nomad-rights/app/
+    base.href = ''; // https://ccryptocoder.github.io/nomad-rights/app/
 
     document.head.appendChild(base);
 })
